@@ -1,5 +1,5 @@
-import BotaoConcluirTarefa from "./componente/concluirTarefa";
-import BotaoDeletaTarefa from "./componente/deletaTarefa";
+import BotaoConcluirTarefa from "./componente/concluirTarefa.js";
+import BotaoDeletaTarefa from "./componente/deletarTarefa.js";
 
 const novaTarefa = document.querySelector('[data-form-button]');
 
@@ -10,7 +10,8 @@ const criarTarefa = (evento) => {
     const valor = input.value;
     
     const calendario = document.querySelector('[data-form-date]');
-    const data = calendario.value;
+    const data = moment(calendario.value);
+    console.log(data.format("DD/MM/YYYY"))
 
     const conteudo = `<p class="content">${valor}</p>`;
 
