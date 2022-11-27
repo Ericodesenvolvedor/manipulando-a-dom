@@ -1,12 +1,12 @@
 const BotaoDeletaTarefa = () => {
     const botao = document.createElement('button');
     botao.innerHTML = 'Deletar'
-    botao.addEventListener('click', deletarTarefa);
+    botao.addEventListener('click', DeletarTarefa);
 
     return botao;
 }
 
-const deletarTarefa = (evento) => {
+const DeletarTarefa = (evento) => {
     const botaoConclui = evento.target;
     const tarefaCompleta = botaoConclui.parentElement;
     tarefaCompleta.remove();

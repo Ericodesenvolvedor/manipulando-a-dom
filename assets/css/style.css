@@ -64,7 +64,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
 }
 
@@ -157,6 +157,10 @@ body {
 
 .task.done .content {
   text-decoration: line-through;
+}
+
+.content-data {
+  color: #F6F1D1;
 }
 
 /*# sourceMappingURL=style.css.map */
